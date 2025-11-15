@@ -5,7 +5,7 @@ import { EcwidCart } from "./EcwidCart";
 import "./EcwidCart.css";
 
 // Replace with your Ecwid store ID
-const ECWID_STORE_ID = "YOUR_STORE_ID_HERE";
+const ECWID_STORE_ID = "649213";
 
 function App() {
   useEffect(() => {
