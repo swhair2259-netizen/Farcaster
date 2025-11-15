@@ -1,6 +1,11 @@
 import { sdk } from "@farcaster/frame-sdk";
 import { useEffect } from "react";
 import { useAccount, useConnect, useSignMessage } from "wagmi";
+import { EcwidCart } from "./EcwidCart";
+import "./EcwidCart.css";
+
+// Replace with your Ecwid store ID
+const ECWID_STORE_ID = "YOUR_STORE_ID_HERE";
 
 function App() {
   useEffect(() => {
@@ -11,6 +16,7 @@ function App() {
     <>
       <div>Mini App + Vite + TS + React + Wagmi</div>
       <ConnectMenu />
+      <EcwidCart storeId={ECWID_STORE_ID} />
     </>
   );
 }
